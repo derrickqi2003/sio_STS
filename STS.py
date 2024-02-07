@@ -19,9 +19,9 @@ def dfs(left, path, score):
     cur = path[len(path)-1]
     if cur[0] < 0 or cur[0] >= 9 or cur[1] < 0 or cur[1] >= 7:
         return None
+    score += s_dict[board[cur[0]][cur[1]]]
     if left == 0:
         return [score, path]
-    score += s_dict[board[cur[0]][cur[1]]]
     next = [tuple([cur[0]+1, cur[1]]),tuple([cur[0]-1, cur[1]]),tuple([cur[0], cur[1]+1]),tuple([cur[0], cur[1]-1])]
     results = []
     for coord in next:
