@@ -4,7 +4,7 @@ Input your board into board.txt, which a sample board is provided.
 
 To download this from github, go into your command line and run:
 
-git clone https://github.com/derrickqi2003/sio_STS
+git clone https://github.com/derrickqi2003/sio_STS.git
 
 Go into the directory that contains the script by running:
 
